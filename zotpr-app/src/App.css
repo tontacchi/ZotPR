@@ -9,7 +9,8 @@
 
   --font-family: 'ZotFont', sans-serif;
   --background-color: ZotDarkBlue;
-  --background-image: url('./assets/animegirl.png');
+  --background-image: url('./assets/mainbg.jpg');
+  --zotpr-mascot: url('./assets/animegirl.png');
   --text-color: ZotGold;
 }
 

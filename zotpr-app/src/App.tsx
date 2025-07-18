@@ -1,22 +1,29 @@
-import Navbar from './components/navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import './App.css'
+import Navbar from './components/navbar.tsx'
+
+import Upper from './pages/Upper.tsx'
+import Lower from './pages/Lower.tsx'
+import RunTimes from './pages/RunTimes.tsx'
+import Reps from './pages/Reps.tsx'
+import Login from './pages/Login.tsx'
+import Home from './pages/Home.tsx'
 
 function App() {
   return (
-    <div className="h-screen flex flex-col items-center text-white"
-         style={{ backgroundImage: 'var(--background-image)', opacity: 0.9,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-          }}>
-    <div className="absolute inset-0 bg-black opacity-30"></div>
-      <Navbar />
-      <div>
-          <h1 className="text-2xl text-center py-4">Welcome to ZotPR!</h1>
-          <h2 className="text-xl text-center">{"<(^_^)>"}</h2>
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/upper" element={<Upper />} />
+          <Route path="/lower" element={<Lower />} />
+          <Route path="/run-times" element={<RunTimes />} />
+          <Route path="/reps" element={<Reps />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   )
 }
 

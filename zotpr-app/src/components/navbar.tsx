@@ -6,8 +6,8 @@ import '../styles/navbar.css';
 class Navbar extends React.Component {
   render() {
     return (
-      <nav className="bg-ZotDarkBlue/50 w-full">
-        <div className="max-w-screen-xl mx-auto px-4 py-2 flex items-center justify-between">
+      <nav className="bg-ZotDarkBlue/60 w-full">
+        <div className="mx-auto px-4 py-2 flex items-center justify-between">
 
           {/* Left: Home button */}
           <div className="flex-shrink-0">
@@ -19,10 +19,10 @@ class Navbar extends React.Component {
 
           {/* Center: Nav links */}
           <ul className="flex space-x-6 text-white text-lg">
-            <li><a href="/Upper" className="hover:border-b-2 hover:border-white pb-1">Upper</a></li>
-            <li><a href="/Lower" className="hover:border-b-2 hover:border-white pb-1">Lower</a></li>
-            <li><a href="/Run-Times" className="hover:border-b-2 hover:border-white pb-1">Run Times</a></li>
-            <li><a href="/Reps" className="hover:border-b-2 hover:border-white pb-1">Reps</a></li>
+            <li><a href="/upper" className="hover:border-b-2 hover:border-white pb-1">Upper</a></li>
+            <li><a href="/lower" className="hover:border-b-2 hover:border-white pb-1">Lower</a></li>
+            <li><a href="/run-times" className="hover:border-b-2 hover:border-white pb-1">Run Times</a></li>
+            <li><a href="/reps" className="hover:border-b-2 hover:border-white pb-1">Reps</a></li>
           </ul>
 
           {/* Right: Login button */}
