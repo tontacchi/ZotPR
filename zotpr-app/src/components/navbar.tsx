@@ -8,8 +8,6 @@ class Navbar extends React.Component {
     return (
       <nav className="bg-ZotDarkBlue/60 w-full">
         <div className="mx-auto px-4 py-2 flex items-center justify-between">
-
-
           {/* Left: Home button */}
           <div className="flex-shrink-0">
             <a href="/" className="text-white hover:text-gray-300 flex items-center space-x-2">
